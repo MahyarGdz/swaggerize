@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "Node16",
+    "lib": ["es2023"],
+    "moduleResolution": "Node16",
+    "outDir": "lib",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false
+  }
+}

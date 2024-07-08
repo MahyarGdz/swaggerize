@@ -1,0 +1,49 @@
+{
+  "name": "swaggerify-express",
+  "version": "0.0.1",
+  "description": "Easily integrate Swagger with Express.js applications for API documentation.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/swaggerify-express.git"
+  },
+  "keywords": [
+    "swagger",
+    "api",
+    "documentation",
+    "express",
+    "express.js",
+    "integration",
+    "middleware",
+    "swagger-ui",
+    "typescript",
+    "api-docs"
+  ],
+  "author": "Mahyar Abolfazl",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist/",
+    "build": "npx tsc -p tsconfig.build.json",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint": "eslint . --ext .ts"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
