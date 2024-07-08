@@ -1,13 +1,15 @@
 {
-  "name": "swaggerify-express",
+  "name": "swaggerize",
   "version": "0.0.1",
   "description": "Easily integrate Swagger with Express.js applications for API documentation.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "commonjs",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/swaggerify-express.git"
+    "url": "https://github.com/MahyarGdz/swaggerize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MahyarGdz/swaggerize/issues"
   },
   "keywords": [
     "swagger",
@@ -21,7 +23,7 @@
     "typescript",
     "api-docs"
   ],
-  "author": "Mahyar Abolfazl",
+  "author": "MahyarGdz,Abolfazl Ghaderi",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.10",
