@@ -1,6 +1,6 @@
 {
   "name": "swagger-express-connect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily integrate Swagger with Express.js applications for API documentation.",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
