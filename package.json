@@ -1,6 +1,6 @@
 {
   "name": "swagger-express-connect",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Easily integrate Swagger with Express.js applications for API documentation.",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
@@ -38,6 +38,23 @@
     "typescript",
     "api-docs"
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist/",
+    "build": "npx tsc -p tsconfig.build.json",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint": "eslint . --ext .ts",
+    "publish": "np",
+    "release": "standard-version",
+    "prepare": "husky || true"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+      "eslint . --fix .ts",
+      "git add ."
+    ]
+  },
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -56,15 +73,6 @@
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rimraf dist/",
-    "build": "npx tsc -p tsconfig.build.json",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint": "eslint . --ext .ts",
-    "publish": "np",
-    "release": "standard-version"
   },
   "engines": {
     "node": ">=14.0.0"
