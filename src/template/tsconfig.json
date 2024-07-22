@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true,
-    "strictPropertyInitialization": false
-  }
+    "strictPropertyInitialization": true
+  },
+  "include": []
 }
